@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(35deg, red, purple);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
+}

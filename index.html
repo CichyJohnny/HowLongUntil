@@ -5,8 +5,16 @@
 <head>
     <meta charset="utf-8">
     <title>How Long Until</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/clock_elements.css">
+    <link rel="stylesheet" href="styles/input_elements.css">
+    <link rel="stylesheet" href="styles/popup_elements.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="icon" href="res/logo.png" type="image/png">
 </head>
 
 
@@ -14,69 +22,85 @@
     <header>
         <div class="header-container">
             <a href="index.html">
-                <img src="logo.png" alt="Logo" class="logo" width="50" height="50">
+                <img src="res/logo.png" alt="Logo" class="main-logo">
             </a>
         </div>
     </header>
 
-    
-    <div class="container2">
-        <div class="input-container">
+<!--Container with select boxes for input and button directing to clock-->
+    <div class="input-container">
+        <div class="input-content">
+            <label for="year-select"></label>
             <select name="year-select" id="year-select"></select>
-            <label class="separator">-</label>
+
+            <p>-</p>
+
+            <label for="month-select"></label>
             <select name="month-select" id="month-select"></select>
-            <label class="separator">-</label>
+
+            <p>-</p>
+
+            <label for="day-select"></label>
             <select name="day-select" id="day-select"></select>
-            <label class="separator">&emsp;</label>
+
+            <p>&emsp;</p>
+
+            <label for="hour-select"></label>
             <select name="hour-select" id="hour-select"></select>
-            <label class="separator">:</label>
+
+            <p>:</p>
+
+            <label for="minute-select"></label>
             <select name="minute-select" id="minute-select"></select>
         </div>
-        <button onclick="checkDate()" class="button button--bestia">
-            <div class="button__bg"></div>
+
+        <button onclick="validateDate()" class="button button-bestia">
+            <div class="button-bg"></div>
             <span>How Long Until</span>
         </button>
     </div>
 
 
-    <div class="container1">
-        <div class="clock">
-            <div class="element trans days"></div>
-            <div class="element trans hours"></div>
-            <div class="element trans minutes"></div>
-            <div class="element trans seconds"></div>
-        </div>  
-        <div class="clock">
-            <div class="element halftrans days"></div>
-            <div class="element halftrans hours"></div>
-            <div class="element halftrans minutes"></div>
-            <div class="element halftrans seconds"></div>
+<!--Container with clock columns with 5 boxes with animation of sliding down-->
+    <div class="clock-container">
+        <div class="clockColumn">
+            <div class="box transparent days"></div>
+            <div class="box transparent hours"></div>
+            <div class="box transparent minutes"></div>
+            <div class="box transparent seconds"></div>
         </div>
-        <div class="clock">
-            <div class="element days"></div>
-            <div class="element hours"></div>
-            <div class="element minutes"></div>
-            <div class="element seconds"></div>
+        <div class="clockColumn">
+            <div class="box halfTransparent days"></div>
+            <div class="box halfTransparent hours"></div>
+            <div class="box halfTransparent minutes"></div>
+            <div class="box halfTransparent seconds"></div>
         </div>
-        <div class="clock">
-            <div class="element halftrans days"></div>
-            <div class="element halftrans hours"></div>
-            <div class="element halftrans minutes"></div>
-            <div class="element halftrans seconds"></div>
+        <div class="clockColumn">
+            <div class="box days"></div>
+            <div class="box hours"></div>
+            <div class="box minutes"></div>
+            <div class="box seconds"></div>
         </div>
-        <div class="clock">
-            <div class="element trans days"></div>
-            <div class="element trans hours"></div>
-            <div class="element trans minutes"></div>
-            <div class="element trans seconds"></div>
+        <div class="clockColumn">
+            <div class="box halfTransparent days"></div>
+            <div class="box halfTransparent hours"></div>
+            <div class="box halfTransparent minutes"></div>
+            <div class="box halfTransparent seconds"></div>
+        </div>
+        <div class="clockColumn">
+            <div class="box transparent days"></div>
+            <div class="box transparent hours"></div>
+            <div class="box transparent minutes"></div>
+            <div class="box transparent seconds"></div>
         </div>            
     </div>
 
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="modalText">Past date entered. Please try again.</p>
+<!--Pop-up alert-->
+    <div id="popup-container" class="popup-container">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <p id="popup-text"></p>
         </div>
     </div>
 
@@ -86,17 +110,18 @@
             <div class="footer-section">
                 <p>How Long Until - Simple Html + CSS + JS web application with animated clock counting down</p>
             </div>
+
             <div class="footer-section footer-section-right">
                 <a href="https://github.com/CichyJohnny" target="_blank">
                     Jan Cichy - GitHub
-                    <img src="github_logo.png" class="git-logo" alt="GitHub Logo">
+                    <img src="res/github_logo.png" class="git-logo" alt="GitHub Logo">
                 </a>
             </div>
         </div>
     </footer>
 
 
-    <script src="script.js"></script>
-    <script src="datePicker.js"></script>
+    <script src="scripts/clock.js"></script>
+    <script src="scripts/datePicker.js"></script>
 </body>
 </html>

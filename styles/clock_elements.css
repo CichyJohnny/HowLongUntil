@@ -1,0 +1,88 @@
+.clock-container {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.clockColumn {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.box {
+    padding: 0 10px;
+    min-height: 55px;
+    min-width: 55px;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.halfTransparent {
+    opacity: 0.5;
+}
+
+.slideInTo50 {
+    animation: slideInTo50 0.5s ease-in-out;
+}
+
+.slideInTo100 {
+    animation: slideInTo100 0.5s ease-in-out;
+}
+
+.slideOutTo50 {
+    animation: slideOutTo50 0.5s ease-in-out;
+}
+
+.slideOutTo0 {
+    animation: slideOutTo0 0.5s ease-in-out;
+}
+
+@keyframes slideInTo50 {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(75px);
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideInTo100 {
+    from {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(75px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutTo50 {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(75px);
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideOutTo0 {
+    from {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(75px);
+        opacity: 0;
+    }
+}
