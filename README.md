@@ -33,12 +33,12 @@ Aditionally:
 2. [buttons](styles/buttons.css)
    - Button "How Long Until" styles and animations
    - [source](https://github.com/codrops/ButtonHoverStyles/)
-3. [clock elements](styles/clock_elements)
+3. [clock elements](styles/clock_elements.css)
    - Clock with 4 columns with 5 boxes styles
    - Sliding down boxes with illusion of smooth transition animations
-4. [inputs elements](styles/input_elements)
+4. [inputs elements](styles/input_elements.css)
    - Year - month - day and hour : minute select with options styles
-5. [pop-up elements](styles/popup_elements)
+5. [pop-up elements](styles/popup_elements.css)
    - Alert popup style
    - Close button
 6. [header](styles/header.css)
