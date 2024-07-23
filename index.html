@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>How Long Until</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" class="logo" width="50" height="50">
+            </a>
+        </div>
+    </header>
+
+    
+    <div class="container2">
+        <div class="input-container">
+            <select name="year-select" id="year-select"></select>
+            <label class="separator">-</label>
+            <select name="month-select" id="month-select"></select>
+            <label class="separator">-</label>
+            <select name="day-select" id="day-select"></select>
+            <label class="separator">&emsp;</label>
+            <select name="hour-select" id="hour-select"></select>
+            <label class="separator">:</label>
+            <select name="minute-select" id="minute-select"></select>
+        </div>
+        <button onclick="checkDate()" class="button button--bestia">
+            <div class="button__bg"></div>
+            <span>How Long Until</span>
+        </button>
+    </div>
+
+
+    <div class="container1">
+        <div class="clock">
+            <div class="element trans days"></div>
+            <div class="element trans hours"></div>
+            <div class="element trans minutes"></div>
+            <div class="element trans seconds"></div>
+        </div>  
+        <div class="clock">
+            <div class="element halftrans days"></div>
+            <div class="element halftrans hours"></div>
+            <div class="element halftrans minutes"></div>
+            <div class="element halftrans seconds"></div>
+        </div>
+        <div class="clock">
+            <div class="element days"></div>
+            <div class="element hours"></div>
+            <div class="element minutes"></div>
+            <div class="element seconds"></div>
+        </div>
+        <div class="clock">
+            <div class="element halftrans days"></div>
+            <div class="element halftrans hours"></div>
+            <div class="element halftrans minutes"></div>
+            <div class="element halftrans seconds"></div>
+        </div>
+        <div class="clock">
+            <div class="element trans days"></div>
+            <div class="element trans hours"></div>
+            <div class="element trans minutes"></div>
+            <div class="element trans seconds"></div>
+        </div>            
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText">Past date entered. Please try again.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <p>How Long Until - Simple Html + CSS + JS web application with animated clock counting down</p>
+            </div>
+            <div class="footer-section footer-section-right">
+                <a href="https://github.com/CichyJohnny" target="_blank">
+                    Jan Cichy - GitHub
+                    <img src="github_logo.png" class="git-logo" alt="GitHub Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="datePicker.js"></script>
+</body>
+</html>
