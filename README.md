@@ -46,7 +46,7 @@ Aditionally:
 7. [footer](styles/footer.css)
    - Footer with description and GitHub link styles
 
-### JS files content
+## JS files content
 1. [clock](scripts/clock.js)
    - Clock initialization
    - Time updating
