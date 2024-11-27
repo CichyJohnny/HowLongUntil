@@ -63,7 +63,7 @@ function init_clock_digits(d, h, m, s) {
     };
 
     // Fill 4 clock columns - days, hours, minutes, seconds
-    // With 5 boxes in it - 1st (now - 2), 2nd (now - 2), 3rd (now), ...
+    // With 5 boxes in it - 1st (now - 2), 2nd (now - 1), 3rd (now), ...
     // If no more days/hours/minutes/seconds, do now show next value
     for (let i = 0; i < elements.hours.length; i++) {
         if (d - 2 + i < 0) {
